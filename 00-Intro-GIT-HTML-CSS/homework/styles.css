@@ -1,0 +1,19 @@
+h1{
+	color: royalblue;
+}
+.divClass.{
+	color: royalblue;
+}
+
+#thirdDiv{
+	width: 500px; 
+	height: 600px; 
+	background-color: lightblue; 
+	padding: 50px; 
+	border: 5px solid blue;
+}
+
+#spanId{
+	 size: 25px;
+	 margin: 50px
+}
