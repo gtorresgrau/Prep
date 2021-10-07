@@ -1,12 +1,16 @@
 h1{
 	color: royalblue;
 }
-.divClass.{
+.divClass {
 	color: royalblue;
 	align-content: center;
 }
 
-#thirdDiv{
+img {
+	height: 400px;
+}
+
+#thirdDiv {
 	width: 500px; 
 	height: 600px; 
 	background-color: lightblue; 
@@ -15,7 +19,7 @@ h1{
 	align-content: center;
 }
 
-#spanId{
-	 size: 25px;
-	 margin: 50px
+#spanId {
+	font-size: 25px;
+	margin: 50px
 }
