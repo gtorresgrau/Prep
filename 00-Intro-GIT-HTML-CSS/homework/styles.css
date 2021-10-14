@@ -2,8 +2,7 @@ h1{
 	color: royalblue;
 }
 .divClass {
-	color: royalblue;
-	align-content: center;
+	color: greenyellow;
 }
 
 img {
@@ -16,7 +15,6 @@ img {
 	background-color: lightblue; 
 	padding: 50px; 
 	border: 5px solid blue;
-	align-content: center;
 }
 
 #spanId {
