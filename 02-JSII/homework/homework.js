@@ -40,41 +40,79 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-
+for (var i = 0; i < array.length; i++) {
+  if(array[i] === elemento) {
+    return true;
+   }
+  }
+  return false;
 }
 
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser un array de enteros
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-
+  var promedio = 0;
+  var contador = 0;
+  for (var i = 0; i < resultadosTest.length ; i++) {
+      promedio = (promedio + resultadosTest[i]);
+      contador = contador + 1 ;
+    }
+  promedio = (promedio / contador);
+  return promedio;
 }
 
 function numeroMasGrande(numeros) {
   // "numeros" debe ser un array de enteros
   // Devuelve el número más grande
   // Tu código:
-
+var max = 0;
+for (var i = 0; i < numeros.length; i++) {
+    if (numeros[i] > max) {
+      max = numeros[i];
+    }
+    }
+    return max;
 }
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Tu código:
-
+  if (arguments.length === 0) {
+    return 0;
 }
+  var multiplica = 1;
+for (var i =0; i < arguments.length; i++) {
+    multiplica = ( multiplica * arguments[i]);
+}
+return multiplica;
+}
+
 
 function cuentoElementos(arreglo){
   // Realiza una función que retorne la cantidad de los elementos del arreglo que sean mayores a 18.
   // Tu código:
-
+  var mayores = 0;
+  for (var i = 0; i <arreglo.length; i++) {
+   if (arreglo[i] > 18) {
+    mayores = (mayores + 1);
+    }
+  }
+  return mayores;
 }
 
 function todosIguales(arreglo) {
   // Escriba la función todosIguales, si todos los elementos de un arreglo son iguales
   // retornar true, caso contrario retornar false.
   // Tu código:
-  
+  var comparacion = arreglo[0];
+  for (var i = 1; i < arreglo.length; i++) {
+    if (arreglo[i] === comparacion) {
+       return true;
+    }
+  }
+  return false;
 } 
 
 function mesesDelAño(array) {
@@ -82,7 +120,16 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   // Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-
+    var meses = [];
+    for (var i = 0; i < array.length; i++) {
+      if (array[i] === "Enero"|| array[i] === "Marzo" || array[i] === "Noviembre"){
+            meses.push (array[i]);
+          }
+    }
+    if (meses.length < 3) {
+      return "No se encontraron los meses pedidos";
+    }       
+    return meses;
 }
 
 function breakStatement(numero) {
@@ -93,7 +140,15 @@ function breakStatement(numero) {
   // devolver: "Se interrumpió la ejecución"
   // Pista: usá el statement 'break'
   // Tu código:
-
+var array = [];
+  for (var i = 0; i < 10; i++) {
+    if (i === numero) {
+      return "Se interrumpió la ejecución";
+    }
+     numero = (numero + 2);
+     array.push(numero);
+    }
+    return array;
 }
 
 function continueStatement(numero) {
